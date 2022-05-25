@@ -1,5 +1,6 @@
 import './App.css';
 import Cards from './Componentes/Cards';
+import Header from './Componentes/Header';
 import Banner from './Componentes/Banner';
 import { useEffect, useState } from "react";
 import Vehiculos from './services/api';
@@ -19,6 +20,7 @@ function App() {
 
   return (
     <div className="Appp">
+      <Header/>
       <Banner/>
       <Cards vehiculos={data}/>
     </div>
