@@ -1,5 +1,6 @@
 import './App.css';
 import Cards from './Componentes/Cards';
+import Header from './Componentes/Header';
 import { useEffect, useState } from "react";
 import Vehiculos from './services/api';
 
@@ -18,6 +19,7 @@ function App() {
 
   return (
     <div className="Appp">
+      <Header/>
       <Cards vehiculos={data}/>
     </div>
   );

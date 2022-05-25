@@ -1,3 +1,31 @@
+.contenedorHeader{
+    padding: 50px 0;
+}
+.banner-principal{
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 700px) {
+    .banner-principal{
+        height: 300px;
+    }
+}
+@media (max-width: 576px) {
+    .banner-principal{
+        height: 190px;
+    }
+}
+@media (max-width: 400px) {
+    .banner-principal{
+        height: 150px;
+    }
+}
+
+
+
+/*Cards*/
 .produtive{
     width: 90%;
     max-width: 1200px;
@@ -18,3 +46,4 @@
     width: 300px;
     margin: 15px;
 }
+/*Fin cards*/
