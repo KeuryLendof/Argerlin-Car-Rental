@@ -1,115 +1,127 @@
 /*Header*/
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
 
-
-.navContainer{
+.header { 
+    font-family: 'Alfa Slab One', cursive; 
     border-radius: 0 0 15% 15%;
     border-bottom: 4px solid rgb(0, 0, 0);
-    background: #ff1616de;
-    overflow: hidden;
-}
-
-header{
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-    align-items: center;
+    background-color: #ff1616de;  
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1); 
+    color: #fff; 
+    position: fixed;  
+    width: 100%;  
+    z-index: 3;  
+}  
+.header ul {  
+    margin: 0;  
+    padding: 0;  
+    list-style: none;  
+    overflow: hidden;  
+}  
+.header li a {  
+    display: block;  
+    padding: 20px 20px;  
     color: #fff;
+    text-decoration: none;  
+} 
+.header li a:last-child{
+    margin-right: 30px;
 }
+.header li a:hover,  
+.header .menu-btn:hover {  
+    background-color: #ff1616f1;  
+}  
+.header .logo {  
+    display: block;  
+    float: left;  
+    font-size: 2rem; 
+    padding: 5px 30px;
+    color: #fff; 
+    text-decoration: none;  
+}  
+/* menu */  
+.header .menu {  
+    clear: both;  
+    max-height: 0;  
+    transition: max-height .2s ease-out;  
+}  
+/* menu icon */  
+.header .menu-icon {  
+    cursor: pointer;  
+    display: inline-block;  
+    float: right;  
+    padding: 28px 20px;  
+    position: relative;  
+    user-select: none;  
+}  
+.header .menu-icon .navicon {  
+    background: #fff;  
+    display: block;  
+    height: 3px;  
+    position: relative;  
+    transition: background .2s ease-out;  
+    width: 18px;  
+}  
+.header .menu-icon .navicon:before,  
+.header .menu-icon .navicon:after {  
+    background: #fff;  
+    content: '';  
+    display: block;  
+    height: 100%;  
+    position: absolute;  
+    transition: all .2s ease-out;  
+    width: 100%;  
+}  
+.header .menu-icon .navicon:before {  
+    top: 5px;  
+}  
+.header .menu-icon .navicon:after {  
+    top: -5px;  
+}  
+/* menu btn */  
+.header .menu-btn {  
+    display: none;  
+}  
+.header .menu-btn:checked ~ .menu {  
+    max-height: 240px;  
+}  
+.header .menu-btn:checked ~ .menu-icon .navicon {  
+    background: transparent;  
+}  
+.header .menu-btn:checked ~ .menu-icon .navicon:before {  
+    transform: rotate(-45deg);  
+}  
+.header .menu-btn:checked ~ .menu-icon .navicon:after {  
+    transform: rotate(45deg);  
+}  
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,  
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {  
+    top: 0;  
+}  
+/* 48em = 768px */  
+@media screen and (min-width: 768px){
 
-header a{
-    text-decoration: none;
-}
-  
-.brand-title {
-    color: #fff;
-    display: block;
-    font-size: 2rem;
-    font-family: 'Raleway', sans-serif;
-    margin-left: 12px;
-}
-  
-.navbar-links {
-    height: 100%;
-}
-  
-.navbar-links ul {
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-.navbar-links li {
-    list-style: none;
-}
-  
-.navbar-links li a {
-    display: block;
-    text-decoration: none;
-    color: #fff;
-    padding: 1rem;
-    font-size: 1rem
-}
-  
-.toggle-button {
-    position: absolute;
-    top: 0.75rem;
-    right: 1rem;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-    margin-top: 18px;
-    transition: all .4s ease-in-out;
-}
-  
-.toggle-button .bar {
-    height: 3px;
-    width: 100%;
-    background-color: white;
-    border-radius: 10px;
-}
-
-  
-@media (max-width: 720px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-  
-    .toggle-button {
-        margin-top: 22px;
-        display: flex;
-    }
-  
-    .navbar-links {
-        display: none;
-        width: 100%;
-    }
-  
-    .navbar-links ul {
-        width: 100%;
-        flex-direction: column;
-    }
-  
-    .navbar-links ul li {
-        text-align: justify;
-    }
-  
-    .navbar-links ul li a {
-        padding: .5rem 1rem;
-    }
-  
-    .navbar-links .active {
-        display: flex;
-    }
-}
+    .header li {  
+     float: left;  
+    } 
+    .header li a {  
+     padding: 20px 20px;  
+    }  
+    .header .menu {  
+     clear: none;  
+     float: right;  
+     max-height: none;  
+    }  
+    .header .menu-icon {  
+     display: none;  
+    }  
+}  
 
 /*Fin header*/
 
 /*Banner*/
 .contenedorBanner{
-    padding: 70px 0;
+    padding: 80px 0;
 }
 .banner-principal{
     height: 350px;
