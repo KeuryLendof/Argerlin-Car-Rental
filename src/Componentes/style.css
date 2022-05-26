@@ -122,6 +122,7 @@
 /*Banner*/
 .contenedorBanner{
     padding: 85px 0;
+    max-height: 360px;
 }
 .banner-principal{
     height: 350px;
@@ -176,7 +177,7 @@
     padding: 10px 0;
 }
 .join_container{
-    background-color: #ff1616de;
+    background-color: #ff1616;
     box-shadow: 1px 1px 10px -5px rgb(255, 255, 255, .5);
     border-radius: 12px;
     padding-left: 1.5em;
@@ -209,6 +210,18 @@
     border: none;
 }
 
+.join_container .marcas{
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2;
+}
+
+.join_container .marcas article{
+    color: #fff;
+    font-size: 18px;
+}
+
 @media screen and (max-width: 410px){
     .join_container{
         width: 77%;
@@ -217,8 +230,10 @@
         font-size: 1.6rem;
     }
 }
-@media screen and (min-width: 720px){
-    
+@media screen and (min-width: 777px){
+    .join_container .marcas{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }
 
 /*fin*/
