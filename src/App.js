@@ -8,6 +8,7 @@ import Vehiculos from './services/api';
 function App() {
 
   const [data, setData] = useState();
+  const [buscar, setBuscar] = useState();
 
   useEffect(() => {
     setData(Vehiculos)
@@ -22,6 +23,14 @@ function App() {
     <div className="Appp">
       <Header/>
       <Banner/>
+      <div className="join" id="search">
+        <div className="join_container">
+          <h2 className="join_title">Busca tu vehiculo preferido aqui!</h2>
+          <form action="" className="join_form">
+            <input type="text" placeholder="example 'mercedes' " className="join_input" onChange={e => setBuscar(e.target.value)} />
+          </form>
+        </div>
+      </div>
       <Cards vehiculos={data}/>
     </div>
   );

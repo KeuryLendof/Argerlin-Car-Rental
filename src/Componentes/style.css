@@ -121,7 +121,7 @@
 
 /*Banner*/
 .contenedorBanner{
-    padding: 80px 0;
+    padding: 85px 0;
 }
 .banner-principal{
     height: 350px;
@@ -152,7 +152,7 @@
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 30px 0;
+    padding: 25px 0;
     overflow: hidden;
 }
 
@@ -169,3 +169,56 @@
     margin: 15px;
 }
 /*Fin cards*/
+
+/*Buscador*/
+
+.join{
+    padding: 10px 0;
+}
+.join_container{
+    background-color: #ff1616de;
+    box-shadow: 1px 1px 10px -5px rgb(255, 255, 255, .5);
+    border-radius: 12px;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    text-align: center;
+    width: 65%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.join_title{
+    font-family: 'Alfa Slab One', cursive;
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 1em;
+}
+
+.join_form{
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.join_input{
+    padding: 15px 20px;
+    font: inherit;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+}
+
+@media screen and (max-width: 410px){
+    .join_container{
+        width: 77%;
+    }
+    .join_title{
+        font-size: 1.6rem;
+    }
+}
+@media screen and (min-width: 720px){
+    
+}
+
+/*fin*/
