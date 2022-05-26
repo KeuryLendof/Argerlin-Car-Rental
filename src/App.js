@@ -26,25 +26,48 @@ function App() {
       <div className="join" id="search">
         <div className="join_container">
           <h2 className="join_title">¿Que quieres rental?</h2>
-          <form action="" className="join_form">
-            <input type="text" placeholder="example 'mercedes' " className="join_input" onChange={e => setBuscar(e.target.value)} />
-          </form>
           <section className='marcas'>
             <article>
-              <img src='' alt='mercedes'/>
+              <img src={require('./assets/images/mercedes.png')} alt='mercedes'/>
               <p>Mercedes</p>
             </article>
             <article>
-              <img src='' alt='honda'/>
+              <img src={require('./assets/images/honda.png')} alt='honda'/>
               <p>Honda</p>
             </article>
             <article>
-              <img src='' alt='hyundai'/>
+              <img src={require('./assets/images/hyundai.png')} alt='hyundai'/>
               <p>Hyundai</p>
             </article>
             <article>
-              <img src='' alt='kia'/>
+              <img src={require('./assets/images/kia.png')} alt='kia'/>
               <p>Kia</p>
+            </article>
+          </section>
+          <form action="" className="join_form">
+            <input
+              type="text"
+              placeholder="example 'mercedes' "
+              className="join_input" 
+              onChange={e => setBuscar(e.target.value)} 
+            />
+          </form>
+          <section className='marcas'>
+            <article>
+              <img src={require('./assets/images/mazda.png')} alt='kia'/>
+              <p>Mazda</p>
+            </article>
+            <article>
+              <img src={require('./assets/images/suzuki.png')} alt='kia'/>
+              <p>Suzuki</p>
+            </article>
+            <article>
+              <img src={require('./assets/images/mitsubishi.png')} alt='kia'/>
+              <p>Mitsubishi</p>
+            </article>
+            <article>
+              <img src={require('./assets/images/maseratti.png')} alt='kia'/>
+              <p>Maseratti</p>
             </article>
           </section>
         </div>
