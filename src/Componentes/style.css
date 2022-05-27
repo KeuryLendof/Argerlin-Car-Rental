@@ -197,8 +197,19 @@
 .join_form{
     display: grid;
     grid-template-columns: 1fr max-content;
-    width: 90%;
+    width: 93%;
     margin: 0 auto;
+    position: relative;
+}
+
+.join_form img{
+    position: absolute;
+  top: 12px;
+  right: 10px;
+  font-size: 22px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
 }
 
 .join_input{
@@ -237,6 +248,9 @@
 @media screen and (min-width: 777px){
     .join_container .marcas{
         grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .join_form{
+        width: 85%;
     }
 }
 

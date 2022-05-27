@@ -25,7 +25,7 @@ function App() {
       <Banner/>
       <div className="join" id="search">
         <div className="join_container">
-          <h2 className="join_title">¿Que quieres rental?</h2>
+          {/* <h2 className="join_title">¿Que quieres rental?</h2> */}
           <section className='marcas'>
             <article>
               <img src={require('./assets/images/mercedes.png')} alt='mercedes'/>
@@ -47,10 +47,11 @@ function App() {
           <form action="" className="join_form">
             <input
               type="text"
-              placeholder="example 'mercedes' "
+              placeholder="¿Que quieres rental?"
               className="join_input" 
               onChange={e => setBuscar(e.target.value)} 
             />
+            <img src={require('./assets/images/search.png')} alt='mercedes'/>
           </form>
           <section className='marcas'>
             <article>
