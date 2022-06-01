@@ -17,9 +17,9 @@ const Vehiculos = [
     },
     {
         id: 2,
-        nombre: 'Tesla Model E',
+        nombre: 'Mercedes GLE Coupé',
         subtitulo: 'Free recharge at any station',
-        imagen: require('../assets/images/tesla.png'),
+        imagen: require('../assets/images/mercedesamg.png'),
         descuento: '20% OFF',
         configuraciones:[
             { label: '3 passengers', icon: Users },
@@ -31,9 +31,9 @@ const Vehiculos = [
     },
     {
         id: 3,
-        nombre: 'Tesla Model X',
+        nombre: 'Mercedes AMG GLE 63 S',
         subtitulo: 'Free recharge at any station',
-        imagen: require('../assets/images/tesla.png'),
+        imagen: require('../assets/images/mercedesamgs.png'),
         descuento: '20% OFF',
         configuraciones:[
             { label: '2 passengers', icon: Users },
@@ -45,9 +45,9 @@ const Vehiculos = [
     },
     {
         id: 4,
-        nombre: 'Tesla Model O',
+        nombre: '2020 HONDA CR-V',
         subtitulo: 'Free recharge at any station',
-        imagen: require('../assets/images/tesla.png'),
+        imagen: require('../assets/images/honda-cr-v.png'),
         descuento: '20% OFF',
         configuraciones:[
             { label: '4 passengers', icon: Users },
