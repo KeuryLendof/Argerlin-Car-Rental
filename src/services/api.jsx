@@ -211,6 +211,20 @@ const Vehiculos = [
         ],
         precio: '$40.00'
     },
+    {
+        id: 16,
+        nombre: 'Hyundai Tucson 2019',
+        subtitulo: 'Free recharge at any station',
+        imagen: require('../assets/images/2019 Hyundai Tucson.png'),
+        descuento: '20% OFF',
+        configuraciones:[
+            { label: '4 passengers', icon: Users },
+            { label: '100 km/h in 4 seconds', icon: Gauge },
+            { label: 'Automatic gearbox', icon: ManualGearbox },
+            { label: 'Electric', icon: GasStation }
+        ],
+        precio: '$40.00'
+    }
 ]
 
 export default Vehiculos;

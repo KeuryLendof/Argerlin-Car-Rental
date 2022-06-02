@@ -35,11 +35,11 @@ function App() {
               <img src={require('./assets/images/honda.png')} alt='honda'/>
               <p>Honda</p>
             </article>
-            <article>
+            <article className='ocultar'>
               <img src={require('./assets/images/hyundai.png')} alt='hyundai'/>
               <p>Hyundai</p>
             </article>
-            <article>
+            <article className='ocultar'>
               <img src={require('./assets/images/kia.png')} alt='kia'/>
               <p>Kia</p>
             </article>
@@ -62,11 +62,11 @@ function App() {
               <img src={require('./assets/images/suzuki.png')} alt='kia'/>
               <p>Suzuki</p>
             </article>
-            <article>
+            <article className='ocultar'>
               <img src={require('./assets/images/mitsubishi.png')} alt='kia'/>
               <p>Mitsubishi</p>
             </article>
-            <article>
+            <article className='ocultar'>
               <img src={require('./assets/images/maseratti.png')} alt='kia'/>
               <p>Maseratti</p>
             </article>

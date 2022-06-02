@@ -34,8 +34,8 @@
 .header .logo {  
     display: block;  
     float: left;  
-    font-size: 2rem; 
-    padding: 5px 30px;
+    font-size: 1.3rem; 
+    padding: 16px 30px;
     color: #fff; 
     text-decoration: none;  
 }  
@@ -229,6 +229,13 @@
     grid-template-columns: 1fr 1fr;
     gap: 2;
 }
+.join_container .marcas article p{
+    font-family: 'Alfa Slab One';
+    font-size: 13px;
+}
+.join_container .marcas .ocultar{
+    display: none;
+}
 
 .join_container .marcas article{
     color: #fff;
@@ -255,6 +262,17 @@
     .join_form{
         width: 85%;
     }
+    .join_container .marcas .ocultar{
+        display: block;
+    }
+    .header .logo {  
+        display: block;  
+        float: left;  
+        font-size: 2rem; 
+        padding: 8px 30px;
+        color: #fff; 
+        text-decoration: none;  
+    } 
 }
 
 /*fin*/
