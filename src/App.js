@@ -1,4 +1,5 @@
 import './App.css';
+import swal from 'sweetalert';
 import Cards from './Componentes/Cards';
 import Header from './Componentes/Header';
 import Banner from './Componentes/Banner';
@@ -14,13 +15,18 @@ function App() {
     setData(Vehiculos)
   },[])
 
+  const Alerta=()=>{
+
+    setTimeout(swal("Good job!", "You clicked the button!", "warning"), 5000);
+    // info
+  }
 
   if(!data){
     return <div id="loader"></div>
   }
 
   return (
-    <div className="Appp">
+    <div className="Appp" onLoad={()=>Alerta()}>
       <Header/>
       <Banner/>
       <div className="join" id="search">
