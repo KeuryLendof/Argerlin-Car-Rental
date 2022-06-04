@@ -17,7 +17,7 @@ function App() {
 
   const Alerta=()=>{
 
-    setTimeout(swal("Good job!", "You clicked the button!", "warning"), 5000);
+    swal("Good job!", "You clicked the button!", "warning");
     // info
   }
 
@@ -26,7 +26,7 @@ function App() {
   }
 
   return (
-    <div className="Appp" onLoad={()=>Alerta()}>
+    <div className="Appp" onLoad={()=>setTimeout(Alerta(),9000)}>
       <Header/>
       <Banner/>
       <div className="join" id="search">
