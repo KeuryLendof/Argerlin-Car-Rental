@@ -26,7 +26,7 @@ function App() {
   }
 
   return (
-    <div className="Appp" onLoad={()=>setTimeout(Alerta(),9000)}>
+    <div className="Appp" onLoad={setTimeout(Alerta,9000)}>
       <Header/>
       <Banner/>
       <div className="join" id="search">
