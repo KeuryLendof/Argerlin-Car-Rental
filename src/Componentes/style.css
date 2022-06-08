@@ -193,7 +193,7 @@
 }
 
 .produtive article{
-    width: 80%;
+    width: 88%;
     margin: 0 auto;
 }
 .produtive article h3{
@@ -203,9 +203,11 @@
 
 .cardContainer{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
 }
 
 

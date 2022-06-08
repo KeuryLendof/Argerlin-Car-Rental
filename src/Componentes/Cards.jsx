@@ -105,6 +105,14 @@ function Cards({vehiculos}) {
         )
       })}
       </div>
+      <article>
+        <h3>Mas economico</h3>
+        <hr />
+      </article>
+      <article>
+        <h3>Alta Gama</h3>
+        <hr />
+      </article>
     </div>
   );
 }
