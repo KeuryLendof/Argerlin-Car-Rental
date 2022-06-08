@@ -240,3 +240,31 @@
 }
 
 /*fin*/
+
+/*Slider*/
+.carousel{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 0;
+    margin-bottom: 25px;
+}
+.carousel-item{
+    text-align: center;
+    justify-content: center;
+}
+.carousel-control-prev{
+    background: #ff1616de;
+    margin-top: 17px;
+    height: 47px;
+    width: 47px;
+    border-radius: 50%;
+}
+.carousel-control-next{
+    background: #ff1616de;
+    margin-top: 17px;
+    height: 47px;
+    width: 47px;
+    border-radius: 50%;
+}
+/*Fin slider*/

@@ -6,6 +6,7 @@ import Banner from './Componentes/Banner';
 import { useEffect, useState } from "react";
 import Vehiculos from './services/api';
 import Marcas from './Componentes/Marcas';
+import Slider from './Componentes/Slider';
 
 function App() {
 
@@ -36,6 +37,7 @@ function App() {
       <br/>
       <Banner/>
       <Cards vehiculos={data}/>
+      <Slider />
     </div>
   );
 }
