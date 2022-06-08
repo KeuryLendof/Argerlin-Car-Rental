@@ -119,9 +119,17 @@
 
 /*Fin header*/
 
+/*Marcas*/
+
+.marcasContainer{
+    background: #ff1616de;
+}
+
+/*Fin marcas*/
+
 /*Banner*/
 .contenedorBanner{
-    padding: 85px 0;
+    
     max-height: 360px;
 }
 .banner-principal{
@@ -153,7 +161,7 @@
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 25px 0;
+    padding: 5px 0;
     overflow: hidden;
 }
 
@@ -174,97 +182,15 @@
 }
 /*Fin cards*/
 
-/*Buscador*/
-
-.join{
-}
-.join_container{
-    background-color: #ff1616;
-    box-shadow: 1px 1px 10px -5px rgb(255, 255, 255, .5);
-    border-radius: 12px;
-    padding-left: 1.5em;
-    padding-right: 1.5em;
-    text-align: center;
-    width: 65%;
-    margin: 0 auto;
-    padding: 5px 0;
-}
-
-.join_title{
-    font-family: 'Alfa Slab One', cursive;
-    color: #fff;
-    font-size: 2rem;
-    margin-bottom: 1em;
-}
-
-.join_form{
-    display: grid;
-    grid-template-columns: 1fr max-content;
-    width: 93%;
-    margin: 0 auto;
-    position: relative;
-}
-
-.join_form img{
-    position: absolute;
-  top: 12px;
-  right: 10px;
-  font-size: 22px;
-  cursor: pointer;
-  width: 30px;
-  height: 30px;
-}
-
-.join_input{
-    padding: 15px 20px;
-    font: inherit;
-    border-radius: 30px;
-    outline: none;
-    border: none;
-}
-
-.join_container .marcas{
-    margin-top: 25px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2;
-}
-.join_container .marcas article p{
-    font-family: 'Alfa Slab One';
-    font-size: 13px;
-}
-.join_container .marcas .ocultar{
-    display: none;
-}
-
-.join_container .marcas article{
-    color: #fff;
-    font-size: 18px;
-}
-
-.join_container .marcas article img{
-    width: 30px;
-    height: 30px;
-}
 
 @media screen and (max-width: 410px){
-    .join_container{
-        width: 77%;
-    }
+  
     .join_title{
         font-size: 1.6rem;
     }
 }
 @media screen and (min-width: 777px){
-    .join_container .marcas{
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-    .join_form{
-        width: 85%;
-    }
-    .join_container .marcas .ocultar{
-        display: block;
-    }
+  
     .header .logo {  
         display: block;  
         float: left;  

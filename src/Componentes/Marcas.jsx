@@ -6,8 +6,8 @@ function Marcas(){
 
 
     return(
-        <div>
-
+        <div className='marcasContainer'>
+            <h3>Soy las marcas</h3>
         </div>
     )
 }
