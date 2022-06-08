@@ -192,6 +192,15 @@
     overflow: hidden;
 }
 
+.produtive article{
+    width: 80%;
+    margin: 0 auto;
+}
+.produtive article h3{
+    font-size: 1.4rem; 
+    font-weight: 500; 
+}
+
 .cardContainer{
     display: flex;
     justify-content: center;

@@ -45,7 +45,12 @@ function Cards({vehiculos}) {
   const { classes } = useStyles();
 
   return (
-    <div className='cardContainer produtive'>
+    <div className='produtive'>
+      <article>
+        <h3>Mas rentados</h3>
+        <hr />
+      </article>
+      <div className='cardContainer'>
       {vehiculos.map((v)=>{
         return(
         <Card withBorder radius="md" className="cards">
@@ -99,6 +104,7 @@ function Cards({vehiculos}) {
         </Card>
         )
       })}
+      </div>
     </div>
   );
 }
