@@ -10,7 +10,7 @@ import Marcas from './Componentes/Marcas';
 function App() {
 
   const [data, setData] = useState();
-  const [buscar, setBuscar] = useState();
+  // const [buscar, setBuscar] = useState();
 
   useEffect(() => {
     setData(Vehiculos)
@@ -35,7 +35,6 @@ function App() {
       <br/>
       <br/>
       <Banner/>
-      <Marcas />
       <Cards vehiculos={data}/>
     </div>
   );

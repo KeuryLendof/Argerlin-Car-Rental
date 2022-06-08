@@ -122,7 +122,34 @@
 /*Marcas*/
 
 .marcasContainer{
-    background: #ff1616de;
+    background: #ff1616f8;
+}
+
+.marcasContainer .marcasTitulo{
+    text-align: center;
+    justify-content: center;
+    padding: 1px 0;
+}
+
+.marcasContainer .marcasTitulo h3{
+    color: #fff;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 1.5rem; 
+    font-weight: 100; 
+}
+
+.marcasContainer .marcas{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+
+    text-align: center;
+    justify-content: center;
+}
+
+.marcasContainer .marcas article{
+    margin: 15px;
+    display: flex;
 }
 
 /*Fin marcas*/
@@ -161,7 +188,7 @@
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 5px 0;
+    padding: 15px 0;
     overflow: hidden;
 }
 
