@@ -26,16 +26,16 @@ function Slider(){
           navigation={true}
           breakpoints={{
             640: {
-              slidesPerView: 2,
-              spaceBetween: 20,
+              slidesPerView: 1,
+              spaceBetween: 15,
             },
             768: {
-              slidesPerView: 4,
-              spaceBetween: 40,
+              slidesPerView: 2,
+              spaceBetween: 35,
             },
             1024: {
-              slidesPerView: 5,
-              spaceBetween: 50,
+              slidesPerView: 3,
+              spaceBetween: 45,
             },
           }}
           modules={[Pagination, Navigation]}

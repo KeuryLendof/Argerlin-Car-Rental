@@ -253,20 +253,17 @@
 
 }
 .swiper-slide {
-    /* text-align: center;
-    font-size: 18px;
-    background: #ff1616de;
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;  
     cursor: grab;
-    width: 300px;   */
 }
   
 .card{
     border-radius: 25px;
     background-color: #FFF;
-    width: 350px;
+    width: 300px;
   }
   .image-content,
   .card-content{
