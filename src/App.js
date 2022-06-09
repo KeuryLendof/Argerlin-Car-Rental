@@ -5,8 +5,6 @@ import Header from './Componentes/Header';
 import Banner from './Componentes/Banner';
 import { useEffect, useState } from "react";
 import Vehiculos from './services/api';
-import Marcas from './Componentes/Marcas';
-import Slider from './Componentes/Slider';
 import "swiper/css/bundle";
 
 function App() {
@@ -38,7 +36,6 @@ function App() {
       <br/>
       <Banner/>
       <Cards vehiculos={data}/>
-      <Slider />
     </div>
   );
 }
