@@ -3,11 +3,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 import "./style.css";
 
 // import required modules
-import { Pagination } from "swiper";
+import { Pagination, Navigation } from "swiper";
 
 
 
@@ -22,6 +23,7 @@ function Slider(){
         pagination={{
           clickable: true,
         }}
+        navigation={true}
         breakpoints={{
           640: {
             slidesPerView: 2,
@@ -36,7 +38,7 @@ function Slider(){
             spaceBetween: 50,
           },
         }}
-        modules={[Pagination]}
+        modules={[Pagination, Navigation]}
         className="mySwiper"
       >
         <SwiperSlide>Slide 1</SwiperSlide>
