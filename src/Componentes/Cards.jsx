@@ -82,59 +82,61 @@ function Cards({vehiculos}) {
         className="mySwiper"
       >
         {vehiculos.map((v)=>{
-          return(
-            <SwiperSlide>
-              <Card withBorder radius="md" className="cards">
-                <Card.Section className={classes.imageSection}>
-                  <Image src={v.imagen} alt="Tesla Model S" />
-                </Card.Section>
-        
-                <Group position="apart" mt="md">
-                  <div>
-                    <Text weight={500}>{v.nombre}</Text>
-                    <Text size="xs" color="dimmed">
-                      {v.subtitulo}
-                    </Text>
-                  </div>
-                  <Badge variant="outline">{v.descuento}</Badge>
-                </Group>
-        
-                <Card.Section className={classes.section} mt="md">
-                  <Text size="sm" color="dimmed" className={classes.label}>
-                    Basic configuration
-                  </Text>
-        
-                  <Group spacing={8} mb={-8}>
-                    {v.configuraciones.map((feature)=>{
-                      return(
-                        <Center key={feature.label}>
-                          <feature.icon size={18} className={classes.icon} />
-                          <Text size="xs">{feature.label}</Text>
-                        </Center>
-                      )
-                    })}
-                  </Group>
-                </Card.Section>
-        
-                <Card.Section className={classes.section}>
-                  <Group spacing={30}>
+          if(v.categoria === 'Mas rentados'){
+            return(
+              <SwiperSlide>
+                <Card withBorder radius="md" className="cards">
+                  <Card.Section className={classes.imageSection}>
+                    <Image src={v.imagen} alt="Tesla Model S" />
+                  </Card.Section>
+          
+                  <Group position="apart" mt="md">
                     <div>
-                      <Text size="xl" weight={700} sx={{ lineHeight: 1 }}>
-                        {v.precio}
-                      </Text>
-                      <Text size="sm" color="dimmed" weight={500} sx={{ lineHeight: 1 }} mt={3}>
-                        per day
+                      <Text weight={500}>{v.nombre}</Text>
+                      <Text size="xs" color="dimmed">
+                        {v.subtitulo}
                       </Text>
                     </div>
-        
-                    <Button radius="xl" style={{ flex: 1 }}>
-                      Rent now
-                    </Button>
+                    <Badge variant="outline">{v.descuento}</Badge>
                   </Group>
-                </Card.Section>
-              </Card>
-            </SwiperSlide>
-          )
+          
+                  <Card.Section className={classes.section} mt="md">
+                    <Text size="sm" color="dimmed" className={classes.label}>
+                      Basic configuration
+                    </Text>
+          
+                    <Group spacing={8} mb={-8}>
+                      {v.configuraciones.map((feature)=>{
+                        return(
+                          <Center key={feature.label}>
+                            <feature.icon size={18} className={classes.icon} />
+                            <Text size="xs">{feature.label}</Text>
+                          </Center>
+                        )
+                      })}
+                    </Group>
+                  </Card.Section>
+          
+                  <Card.Section className={classes.section}>
+                    <Group spacing={30}>
+                      <div>
+                        <Text size="xl" weight={700} sx={{ lineHeight: 1 }}>
+                          {v.precio}
+                        </Text>
+                        <Text size="sm" color="dimmed" weight={500} sx={{ lineHeight: 1 }} mt={3}>
+                          per day
+                        </Text>
+                      </div>
+          
+                      <Button radius="xl" style={{ flex: 1 }}>
+                        Rent now
+                      </Button>
+                    </Group>
+                  </Card.Section>
+                </Card>
+              </SwiperSlide>
+            )
+          }
         })}
       </Swiper>
       <article>
@@ -165,60 +167,62 @@ function Cards({vehiculos}) {
         modules={[Pagination, Navigation]}
         className="mySwiper"
       >
-        {vehiculos.map((v)=>{
-          return(
-            <SwiperSlide>
-              <Card withBorder radius="md" className="cards">
-                <Card.Section className={classes.imageSection}>
-                  <Image src={v.imagen} alt="Tesla Model S" />
-                </Card.Section>
-        
-                <Group position="apart" mt="md">
-                  <div>
-                    <Text weight={500}>{v.nombre}</Text>
-                    <Text size="xs" color="dimmed">
-                      {v.subtitulo}
-                    </Text>
-                  </div>
-                  <Badge variant="outline">{v.descuento}</Badge>
-                </Group>
-        
-                <Card.Section className={classes.section} mt="md">
-                  <Text size="sm" color="dimmed" className={classes.label}>
-                    Basic configuration
-                  </Text>
-        
-                  <Group spacing={8} mb={-8}>
-                    {v.configuraciones.map((feature)=>{
-                      return(
-                        <Center key={feature.label}>
-                          <feature.icon size={18} className={classes.icon} />
-                          <Text size="xs">{feature.label}</Text>
-                        </Center>
-                      )
-                    })}
-                  </Group>
-                </Card.Section>
-        
-                <Card.Section className={classes.section}>
-                  <Group spacing={30}>
+       {vehiculos.map((v)=>{
+          if(v.categoria === 'Mas economico'){
+            return(
+              <SwiperSlide>
+                <Card withBorder radius="md" className="cards">
+                  <Card.Section className={classes.imageSection}>
+                    <Image src={v.imagen} alt="Tesla Model S" />
+                  </Card.Section>
+          
+                  <Group position="apart" mt="md">
                     <div>
-                      <Text size="xl" weight={700} sx={{ lineHeight: 1 }}>
-                        {v.precio}
-                      </Text>
-                      <Text size="sm" color="dimmed" weight={500} sx={{ lineHeight: 1 }} mt={3}>
-                        per day
+                      <Text weight={500}>{v.nombre}</Text>
+                      <Text size="xs" color="dimmed">
+                        {v.subtitulo}
                       </Text>
                     </div>
-        
-                    <Button radius="xl" style={{ flex: 1 }}>
-                      Rent now
-                    </Button>
+                    <Badge variant="outline">{v.descuento}</Badge>
                   </Group>
-                </Card.Section>
-              </Card>
-            </SwiperSlide>
-          )
+          
+                  <Card.Section className={classes.section} mt="md">
+                    <Text size="sm" color="dimmed" className={classes.label}>
+                      Basic configuration
+                    </Text>
+          
+                    <Group spacing={8} mb={-8}>
+                      {v.configuraciones.map((feature)=>{
+                        return(
+                          <Center key={feature.label}>
+                            <feature.icon size={18} className={classes.icon} />
+                            <Text size="xs">{feature.label}</Text>
+                          </Center>
+                        )
+                      })}
+                    </Group>
+                  </Card.Section>
+          
+                  <Card.Section className={classes.section}>
+                    <Group spacing={30}>
+                      <div>
+                        <Text size="xl" weight={700} sx={{ lineHeight: 1 }}>
+                          {v.precio}
+                        </Text>
+                        <Text size="sm" color="dimmed" weight={500} sx={{ lineHeight: 1 }} mt={3}>
+                          per day
+                        </Text>
+                      </div>
+          
+                      <Button radius="xl" style={{ flex: 1 }}>
+                        Rent now
+                      </Button>
+                    </Group>
+                  </Card.Section>
+                </Card>
+              </SwiperSlide>
+            )
+          }
         })}
       </Swiper>
       <article>
@@ -250,59 +254,61 @@ function Cards({vehiculos}) {
         className="mySwiper"
       >
         {vehiculos.map((v)=>{
-          return(
-            <SwiperSlide>
-              <Card withBorder radius="md" className="cards">
-                <Card.Section className={classes.imageSection}>
-                  <Image src={v.imagen} alt="Tesla Model S" />
-                </Card.Section>
-        
-                <Group position="apart" mt="md">
-                  <div>
-                    <Text weight={500}>{v.nombre}</Text>
-                    <Text size="xs" color="dimmed">
-                      {v.subtitulo}
-                    </Text>
-                  </div>
-                  <Badge variant="outline">{v.descuento}</Badge>
-                </Group>
-        
-                <Card.Section className={classes.section} mt="md">
-                  <Text size="sm" color="dimmed" className={classes.label}>
-                    Basic configuration
-                  </Text>
-        
-                  <Group spacing={8} mb={-8}>
-                    {v.configuraciones.map((feature)=>{
-                      return(
-                        <Center key={feature.label}>
-                          <feature.icon size={18} className={classes.icon} />
-                          <Text size="xs">{feature.label}</Text>
-                        </Center>
-                      )
-                    })}
-                  </Group>
-                </Card.Section>
-        
-                <Card.Section className={classes.section}>
-                  <Group spacing={30}>
+          if(v.categoria === 'Alta Gama'){
+            return(
+              <SwiperSlide>
+                <Card withBorder radius="md" className="cards">
+                  <Card.Section className={classes.imageSection}>
+                    <Image src={v.imagen} alt="Tesla Model S" />
+                  </Card.Section>
+          
+                  <Group position="apart" mt="md">
                     <div>
-                      <Text size="xl" weight={700} sx={{ lineHeight: 1 }}>
-                        {v.precio}
-                      </Text>
-                      <Text size="sm" color="dimmed" weight={500} sx={{ lineHeight: 1 }} mt={3}>
-                        per day
+                      <Text weight={500}>{v.nombre}</Text>
+                      <Text size="xs" color="dimmed">
+                        {v.subtitulo}
                       </Text>
                     </div>
-        
-                    <Button radius="xl" style={{ flex: 1 }}>
-                      Rent now
-                    </Button>
+                    <Badge variant="outline">{v.descuento}</Badge>
                   </Group>
-                </Card.Section>
-              </Card>
-            </SwiperSlide>
-          )
+          
+                  <Card.Section className={classes.section} mt="md">
+                    <Text size="sm" color="dimmed" className={classes.label}>
+                      Basic configuration
+                    </Text>
+          
+                    <Group spacing={8} mb={-8}>
+                      {v.configuraciones.map((feature)=>{
+                        return(
+                          <Center key={feature.label}>
+                            <feature.icon size={18} className={classes.icon} />
+                            <Text size="xs">{feature.label}</Text>
+                          </Center>
+                        )
+                      })}
+                    </Group>
+                  </Card.Section>
+          
+                  <Card.Section className={classes.section}>
+                    <Group spacing={30}>
+                      <div>
+                        <Text size="xl" weight={700} sx={{ lineHeight: 1 }}>
+                          {v.precio}
+                        </Text>
+                        <Text size="sm" color="dimmed" weight={500} sx={{ lineHeight: 1 }} mt={3}>
+                          per day
+                        </Text>
+                      </div>
+          
+                      <Button radius="xl" style={{ flex: 1 }}>
+                        Rent now
+                      </Button>
+                    </Group>
+                  </Card.Section>
+                </Card>
+              </SwiperSlide>
+            )
+          }
         })}
       </Swiper>
     </div>

@@ -13,7 +13,8 @@ const Vehiculos = [
             { label: 'Automatic gearbox', icon: ManualGearbox },
             { label: 'Electric', icon: GasStation }
         ],
-        precio: '$168.00'
+        precio: '$168.00',
+        categoria: 'Alta Gama'
     },
     {
         id: 2,
@@ -27,7 +28,8 @@ const Vehiculos = [
             { label: 'Automatic gearbox', icon: ManualGearbox },
             { label: 'Electric', icon: GasStation }
         ],
-        precio: '$168.00'
+        precio: '$168.00',
+        categoria: 'Alta Gama'
     },
     {
         id: 3,
@@ -41,7 +43,8 @@ const Vehiculos = [
             { label: 'Automatic gearbox', icon: ManualGearbox },
             { label: 'Electric', icon: GasStation }
         ],
-        precio: '$168.00'
+        precio: '$168.00',
+        categoria: 'Alta Gama'
     },
     {
         id: 4,
@@ -55,7 +58,8 @@ const Vehiculos = [
             { label: 'Automatic gearbox', icon: ManualGearbox },
             { label: 'Electric', icon: GasStation }
         ],
-        precio: '$168.00'
+        precio: '$168.00',
+        categoria: 'Mas rentados'
     },
     {
         id: 5,
@@ -69,7 +73,8 @@ const Vehiculos = [
             { label: 'Automatic gearbox', icon: ManualGearbox },
             { label: 'Electric', icon: GasStation }
         ],
-        precio: '$68.00'
+        precio: '$68.00',
+        categoria: 'Mas rentados'
     },
     {
         id: 6,
@@ -83,7 +88,8 @@ const Vehiculos = [
             { label: 'Automatic gearbox', icon: ManualGearbox },
             { label: 'Electric', icon: GasStation }
         ],
-        precio: '$50.00'
+        precio: '$50.00',
+        categoria: 'Mas rentados'
     },
     {
         id: 7,
@@ -97,7 +103,8 @@ const Vehiculos = [
             { label: 'Automatic gearbox', icon: ManualGearbox },
             { label: 'Electric', icon: GasStation }
         ],
-        precio: '$40.00'
+        precio: '$40.00',
+        categoria: 'Mas rentados'
     },
     {
         id: 8,
@@ -111,11 +118,12 @@ const Vehiculos = [
             { label: 'Automatic gearbox', icon: ManualGearbox },
             { label: 'Electric', icon: GasStation }
         ],
-        precio: '$35.00'
+        precio: '$35.00',
+        categoria: 'Mas economico'
     },
     {
         id: 9,
-        nombre: 'Jeep Grand Cherokee 2021',
+        nombre: 'Grand Cherokee 2021',
         subtitulo: 'Free recharge at any station',
         imagen: require('../assets/images/jeep grand cherokee.png'),
         descuento: '20% OFF',
@@ -125,7 +133,8 @@ const Vehiculos = [
             { label: 'Automatic gearbox', icon: ManualGearbox },
             { label: 'Electric', icon: GasStation }
         ],
-        precio: '$110.00'
+        precio: '$110.00',
+        categoria: 'Alta Gama'
     },
     {
         id: 10,
@@ -139,7 +148,8 @@ const Vehiculos = [
             { label: 'Automatic gearbox', icon: ManualGearbox },
             { label: 'Electric', icon: GasStation }
         ],
-        precio: '$30.00'
+        precio: '$30.00',
+        categoria: 'Mas economico'
     },
     {
         id: 11,
@@ -153,7 +163,8 @@ const Vehiculos = [
             { label: 'Automatic gearbox', icon: ManualGearbox },
             { label: 'Electric', icon: GasStation }
         ],
-        precio: '$50.00'
+        precio: '$50.00',
+        categoria: 'Alta Gama'
     },
     {
         id: 12,
@@ -167,7 +178,8 @@ const Vehiculos = [
             { label: 'Automatic gearbox', icon: ManualGearbox },
             { label: 'Electric', icon: GasStation }
         ],
-        precio: '$170.00'
+        precio: '$170.00',
+        categoria: 'Alta Gama'
     },
     {
         id: 13,
@@ -181,7 +193,8 @@ const Vehiculos = [
             { label: 'Automatic gearbox', icon: ManualGearbox },
             { label: 'Electric', icon: GasStation }
         ],
-        precio: '$50.00'
+        precio: '$50.00',
+        categoria: 'Mas rentados'
     },
     {
         id: 14,
@@ -195,7 +208,8 @@ const Vehiculos = [
             { label: 'Automatic gearbox', icon: ManualGearbox },
             { label: 'Electric', icon: GasStation }
         ],
-        precio: '$45.00'
+        precio: '$45.00',
+        categoria: 'Mas rentados'
     },
     {
         id: 15,
@@ -209,7 +223,8 @@ const Vehiculos = [
             { label: 'Automatic gearbox', icon: ManualGearbox },
             { label: 'Electric', icon: GasStation }
         ],
-        precio: '$40.00'
+        precio: '$40.00',
+        categoria: 'Mas economico'
     },
     {
         id: 16,
@@ -223,7 +238,8 @@ const Vehiculos = [
             { label: 'Automatic gearbox', icon: ManualGearbox },
             { label: 'Electric', icon: GasStation }
         ],
-        precio: '$40.00'
+        precio: '$40.00',
+        categoria: 'Mas economico'
     }
 ]
 
