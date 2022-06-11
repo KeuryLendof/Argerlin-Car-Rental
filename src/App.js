@@ -3,6 +3,8 @@ import swal from 'sweetalert';
 import Cards from './Componentes/Cards';
 import Header from './Componentes/Header';
 import Banner from './Componentes/Banner';
+import Contact from './Componentes/Contact';
+import Footer from './Componentes/Footer';
 import { useEffect, useState } from "react";
 import Vehiculos from './services/api';
 import "swiper/css/bundle";
@@ -36,6 +38,8 @@ function App() {
       <br/>
       <Banner/>
       <Cards vehiculos={data}/>
+      <Contact/>
+      <Footer/>
     </div>
   );
 }

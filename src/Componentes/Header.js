@@ -12,7 +12,9 @@ function Header(){
             <ul className="menu">  
                 <li><a href="#about">Buscar</a></li>  
                 <li><a href="#careers">Ubicacion</a></li>  
-                <li><a href="#contact">Acerca de</a></li>  
+                <li>
+                    <a href="#careers">Sobre nosotros</a>
+                </li>
             </ul>  
         </header>  
         
