@@ -18,18 +18,18 @@
     list-style: none;  
     overflow: hidden;  
 }  
-.header li a {  
+.header .itemLi a {  
     display: block;  
     padding: 20px 20px;  
     color: #fff;
     text-decoration: none;  
 } 
-.header li a:last-child{
+.header .itemLi a:last-child{
     margin-right: 30px;
 }
-.header li a:hover,  
+.header .itemLi a:hover,  
 .header .menu-btn:hover {  
-    background-color: #ff1616f1;  
+    color: rgb(241, 235, 235);  
 }  
 .header .logo {  
     display: block;  
@@ -45,6 +45,9 @@
     max-height: 0;  
     transition: max-height .2s ease-out;  
 }  
+.dropdown-menu li{
+    color: black;
+}
 /* menu icon */  
 .header .menu-icon {  
     cursor: pointer;  
