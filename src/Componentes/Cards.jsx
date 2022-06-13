@@ -5,6 +5,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Card, Image, Text, Group, Badge, createStyles, Center, Button, TextInput } from '@mantine/core';
 import { useModals } from '@mantine/modals';
+import { DateRangePicker } from '@mantine/dates';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper";
 
@@ -53,13 +54,23 @@ function Cards({vehiculos}) {
   const { classes } = useStyles();
   const modals = useModals();
 
+  // const [value, setValue] = useState<[Date | null, Date | null]>([
+  //   new Date(2021, 11, 1),
+  //   new Date(2021, 11, 5),
+  // ]);
+
   const openContentModal = (name) => {
     const id = modals.openModal({
       title: `${name}`,
       children: (
-        <>
-          
-        </>
+        
+          <DateRangePicker
+            label="Cuantos dias quieres rentar?"
+            placeholder="Pick dates range"
+            // value={value}
+            // onChange={setValue}
+          />
+        
       ),
     });
   };
