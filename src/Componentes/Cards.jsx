@@ -3,7 +3,7 @@ import './style.css'
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Card, Image, Text, Group, Badge, createStyles, Center, Button } from '@mantine/core';
+import { Card, Image, Text, Group, Badge, createStyles, Center, Button, TextInput } from '@mantine/core';
 import { useModals } from '@mantine/modals';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper";
@@ -53,15 +53,16 @@ function Cards({vehiculos}) {
   const { classes } = useStyles();
   const modals = useModals();
 
-  const openConfirmModal = (name) => modals.openConfirmModal({
-    title: `${name}`,
-    children: (
-      <Text size="sm">
-        This action is so important that you are required to confirm it with a modal. Please click
-        one of these buttons to proceed.
-      </Text>
-    ),
-  });
+  const openContentModal = (name) => {
+    const id = modals.openModal({
+      title: `${name}`,
+      children: (
+        <>
+          
+        </>
+      ),
+    });
+  };
 
   return (
     <div className='produtive'>
@@ -140,7 +141,7 @@ function Cards({vehiculos}) {
                         </Text>
                       </div>
 
-                      <Button onClick={()=>openConfirmModal(v.nombre)} radius="xl" style={{ flex: 1 }}>
+                      <Button onClick={()=>openContentModal(v.nombre)} radius="xl" style={{ flex: 1 }}>
                         Rent now
                       </Button>
                     </Group>
