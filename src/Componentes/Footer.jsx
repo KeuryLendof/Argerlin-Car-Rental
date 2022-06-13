@@ -1,6 +1,7 @@
 import React from 'react';
 import { createStyles, Container, Group, ActionIcon } from '@mantine/core';
-import { BrandTwitter, BrandYoutube, BrandInstagram } from 'tabler-icons-react';
+import { BrandWhatsapp, BrandFacebook, BrandInstagram } from 'tabler-icons-react';
+import './style.css'
 // import { MantineLogo } from '../../shared/MantineLogo';
 
 const useStyles = createStyles((theme) => ({
@@ -9,6 +10,7 @@ const useStyles = createStyles((theme) => ({
     borderTop: `1px solid ${
       theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[2]
     }`,
+    backgroundColor:'#ff1616de',
   },
 
   inner: {
@@ -27,6 +29,7 @@ const useStyles = createStyles((theme) => ({
     [theme.fn.smallerThan('xs')]: {
       marginTop: theme.spacing.md,
     },
+    color: '#fff'
   },
 }));
 
@@ -37,16 +40,18 @@ function Footer() {
     <div className={classes.footer}>
       <Container className={classes.inner}>
         {/* <MantineLogo /> */}
-        Argerlin
+        <article className='containerLogoFooter'>
+          <a href="/" className="logoFooter">ARGERLIN</a>
+        </article>
         <Group spacing={0} className={classes.links} position="right" noWrap>
           <ActionIcon size="lg">
-            <BrandTwitter size={18} />
+            <BrandWhatsapp size={20} />
           </ActionIcon>
           <ActionIcon size="lg">
-            <BrandYoutube size={18} />
+            <BrandFacebook size={20} />
           </ActionIcon>
           <ActionIcon size="lg">
-            <BrandInstagram size={18} />
+            <BrandInstagram size={20} />
           </ActionIcon>
         </Group>
       </Container>

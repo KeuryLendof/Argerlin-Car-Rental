@@ -262,3 +262,14 @@
     margin: 0 auto;
 }
 /*Fin contacto*/
+
+/*Footer*/
+.containerLogoFooter{
+    font-family: 'Alfa Slab One', cursive;
+}
+.containerLogoFooter .logoFooter{
+    font-size: 1.5rem; 
+    color: #fff; 
+    text-decoration: none; 
+}
+/*Fin footer*/
