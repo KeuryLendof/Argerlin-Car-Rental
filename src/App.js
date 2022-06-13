@@ -20,7 +20,7 @@ function App() {
 
   const Alerta=()=>{
 
-    swal("Good job!", "You clicked the button!", "warning")
+    swal("Advertencia!", "Los precios pueden variar dependiendo los dias de su renta!", "warning")
     
     // info
   }
