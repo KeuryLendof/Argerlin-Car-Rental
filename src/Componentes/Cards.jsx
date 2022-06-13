@@ -54,7 +54,7 @@ function Cards({vehiculos}) {
   return (
     <div className='produtive'>
       <article>
-        <h3>Mas rentados</h3>
+        <h3>Más rentados</h3>
         <hr />
       </article>
       <Swiper
@@ -138,9 +138,10 @@ function Cards({vehiculos}) {
             )
           }
         })}
+        <br />
       </Swiper>
       <article>
-        <h3>Mas economico</h3>
+        <h3>Más económico</h3>
         <hr />
       </article>
       <Swiper
@@ -224,6 +225,7 @@ function Cards({vehiculos}) {
             )
           }
         })}
+        <br />
       </Swiper>
       <article>
         <h3>Alta Gama</h3>
@@ -310,6 +312,7 @@ function Cards({vehiculos}) {
             )
           }
         })}
+        <br />
       </Swiper>
     </div>
   );
