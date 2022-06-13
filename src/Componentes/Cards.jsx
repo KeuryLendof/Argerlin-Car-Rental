@@ -1,9 +1,9 @@
-import React from 'react';
+import { useState } from 'react';
 import './style.css'
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Card, Image, Text, Group, Badge, createStyles, Center, Button } from '@mantine/core';
+import { Card, Image, Text, Group, Badge, createStyles, Center, Modal, Button, useMantineTheme } from '@mantine/core';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper";
 
@@ -50,8 +50,12 @@ const useStyles = createStyles((theme) => ({
 function Cards({vehiculos}) {
 
   const { classes } = useStyles();
+  const [opened, setOpened] = useState(false);
+  const theme = useMantineTheme();
+
 
   return (
+    <>
     <div className='produtive'>
       <article>
         <h3>Más rentados</h3>
@@ -81,15 +85,15 @@ function Cards({vehiculos}) {
         modules={[Pagination, Navigation]}
         className="mySwiper"
       >
-        {vehiculos.map((v)=>{
-          if(v.categoria === 'Mas rentados'){
-            return(
+        {vehiculos.map((v) => {
+          if (v.categoria === 'Mas rentados') {
+            return (
               <SwiperSlide>
                 <Card withBorder radius="md" className="cards">
                   <Card.Section className={classes.imageSection}>
                     <Image src={v.imagen} alt="Tesla Model S" />
                   </Card.Section>
-          
+
                   <Group position="apart" mt="md">
                     <div>
                       <Text weight={500}>{v.nombre}</Text>
@@ -99,24 +103,24 @@ function Cards({vehiculos}) {
                     </div>
                     <Badge variant="outline">{v.descuento}</Badge>
                   </Group>
-          
+
                   <Card.Section className={classes.section} mt="md">
                     <Text size="sm" color="dimmed" className={classes.label}>
                       Basic configuration
                     </Text>
-          
+
                     <Group spacing={8} mb={-8}>
-                      {v.configuraciones.map((feature)=>{
-                        return(
+                      {v.configuraciones.map((feature) => {
+                        return (
                           <Center key={feature.label}>
                             <feature.icon size={18} className={classes.icon} />
                             <Text size="xs">{feature.label}</Text>
                           </Center>
-                        )
+                        );
                       })}
                     </Group>
                   </Card.Section>
-          
+
                   <Card.Section className={classes.section}>
                     <Group spacing={30}>
                       <div>
@@ -127,15 +131,15 @@ function Cards({vehiculos}) {
                           per day
                         </Text>
                       </div>
-          
-                      <Button radius="xl" style={{ flex: 1 }}>
+
+                      <Button onClick={() => setOpened(true)} radius="xl" style={{ flex: 1 }}>
                         Rent now
                       </Button>
                     </Group>
                   </Card.Section>
                 </Card>
               </SwiperSlide>
-            )
+            );
           }
         })}
         <br />
@@ -168,15 +172,15 @@ function Cards({vehiculos}) {
         modules={[Pagination, Navigation]}
         className="mySwiper"
       >
-       {vehiculos.map((v)=>{
-          if(v.categoria === 'Mas economico'){
-            return(
+        {vehiculos.map((v) => {
+          if (v.categoria === 'Mas economico') {
+            return (
               <SwiperSlide>
                 <Card withBorder radius="md" className="cards">
                   <Card.Section className={classes.imageSection}>
                     <Image src={v.imagen} alt="Tesla Model S" />
                   </Card.Section>
-          
+
                   <Group position="apart" mt="md">
                     <div>
                       <Text weight={500}>{v.nombre}</Text>
@@ -186,24 +190,24 @@ function Cards({vehiculos}) {
                     </div>
                     <Badge variant="outline">{v.descuento}</Badge>
                   </Group>
-          
+
                   <Card.Section className={classes.section} mt="md">
                     <Text size="sm" color="dimmed" className={classes.label}>
                       Basic configuration
                     </Text>
-          
+
                     <Group spacing={8} mb={-8}>
-                      {v.configuraciones.map((feature)=>{
-                        return(
+                      {v.configuraciones.map((feature) => {
+                        return (
                           <Center key={feature.label}>
                             <feature.icon size={18} className={classes.icon} />
                             <Text size="xs">{feature.label}</Text>
                           </Center>
-                        )
+                        );
                       })}
                     </Group>
                   </Card.Section>
-          
+
                   <Card.Section className={classes.section}>
                     <Group spacing={30}>
                       <div>
@@ -214,7 +218,7 @@ function Cards({vehiculos}) {
                           per day
                         </Text>
                       </div>
-          
+
                       <Button radius="xl" style={{ flex: 1 }}>
                         Rent now
                       </Button>
@@ -222,7 +226,7 @@ function Cards({vehiculos}) {
                   </Card.Section>
                 </Card>
               </SwiperSlide>
-            )
+            );
           }
         })}
         <br />
@@ -255,15 +259,15 @@ function Cards({vehiculos}) {
         modules={[Pagination, Navigation]}
         className="mySwiper"
       >
-        {vehiculos.map((v)=>{
-          if(v.categoria === 'Alta Gama'){
-            return(
+        {vehiculos.map((v) => {
+          if (v.categoria === 'Alta Gama') {
+            return (
               <SwiperSlide>
                 <Card withBorder radius="md" className="cards">
                   <Card.Section className={classes.imageSection}>
                     <Image src={v.imagen} alt="Tesla Model S" />
                   </Card.Section>
-          
+
                   <Group position="apart" mt="md">
                     <div>
                       <Text weight={500}>{v.nombre}</Text>
@@ -273,24 +277,24 @@ function Cards({vehiculos}) {
                     </div>
                     <Badge variant="outline">{v.descuento}</Badge>
                   </Group>
-          
+
                   <Card.Section className={classes.section} mt="md">
                     <Text size="sm" color="dimmed" className={classes.label}>
                       Basic configuration
                     </Text>
-          
+
                     <Group spacing={8} mb={-8}>
-                      {v.configuraciones.map((feature)=>{
-                        return(
+                      {v.configuraciones.map((feature) => {
+                        return (
                           <Center key={feature.label}>
                             <feature.icon size={18} className={classes.icon} />
                             <Text size="xs">{feature.label}</Text>
                           </Center>
-                        )
+                        );
                       })}
                     </Group>
                   </Card.Section>
-          
+
                   <Card.Section className={classes.section}>
                     <Group spacing={30}>
                       <div>
@@ -301,7 +305,7 @@ function Cards({vehiculos}) {
                           per day
                         </Text>
                       </div>
-          
+
                       <Button radius="xl" style={{ flex: 1 }}>
                         Rent now
                       </Button>
@@ -309,12 +313,23 @@ function Cards({vehiculos}) {
                   </Card.Section>
                 </Card>
               </SwiperSlide>
-            )
+            );
           }
         })}
         <br />
       </Swiper>
     </div>
+    <Modal
+      opened={opened}
+      onClose={() => setOpened(false)}
+      title="Introduce yourself!"
+      size="lg"
+      overlayColor={theme.colorScheme === 'dark' ? theme.colors.dark[9] : theme.colors.gray[2]}
+      overlayOpacity={0.55}
+      overlayBlur={3}
+    >
+      {/* Modal content */}
+    </Modal></>
   );
 }
 
