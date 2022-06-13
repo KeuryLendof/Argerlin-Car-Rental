@@ -8,6 +8,8 @@ import Footer from './Componentes/Footer';
 import { useEffect, useState } from "react";
 import Vehiculos from './services/api';
 import "swiper/css/bundle";
+import { MantineProvider } from '@mantine/core';
+import { ModalsProvider } from '@mantine/modals';
 
 function App() {
 
@@ -31,15 +33,19 @@ function App() {
 
   return (
     <div className="Appp" onLoad={setTimeout(Alerta,9000)}>
-      <Header/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <Banner/>
-      <Cards vehiculos={data}/>
-      <Contact/>
-      <Footer/>
+      <MantineProvider>
+        <ModalsProvider>
+          <Header/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <Banner/>
+          <Cards vehiculos={data}/>
+          <Contact/>
+          <Footer/>
+        </ModalsProvider>
+      </MantineProvider>
     </div>
   );
 }

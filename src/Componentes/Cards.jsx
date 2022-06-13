@@ -3,7 +3,8 @@ import './style.css'
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Card, Image, Text, Group, Badge, createStyles, Center, Modal, Button, useMantineTheme } from '@mantine/core';
+import { Card, Image, Text, Group, Badge, createStyles, Center, Button } from '@mantine/core';
+import { useModals } from '@mantine/modals';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper";
 
@@ -50,12 +51,19 @@ const useStyles = createStyles((theme) => ({
 function Cards({vehiculos}) {
 
   const { classes } = useStyles();
-  const [opened, setOpened] = useState(false);
-  const theme = useMantineTheme();
+  const modals = useModals();
 
+  const openConfirmModal = (name) => modals.openConfirmModal({
+    title: `${name}`,
+    children: (
+      <Text size="sm">
+        This action is so important that you are required to confirm it with a modal. Please click
+        one of these buttons to proceed.
+      </Text>
+    ),
+  });
 
   return (
-    <>
     <div className='produtive'>
       <article>
         <h3>Más rentados</h3>
@@ -132,7 +140,7 @@ function Cards({vehiculos}) {
                         </Text>
                       </div>
 
-                      <Button onClick={() => setOpened(true)} radius="xl" style={{ flex: 1 }}>
+                      <Button onClick={()=>openConfirmModal(v.nombre)} radius="xl" style={{ flex: 1 }}>
                         Rent now
                       </Button>
                     </Group>
@@ -319,17 +327,6 @@ function Cards({vehiculos}) {
         <br />
       </Swiper>
     </div>
-    <Modal
-      opened={opened}
-      onClose={() => setOpened(false)}
-      title="Introduce yourself!"
-      size="lg"
-      overlayColor={theme.colorScheme === 'dark' ? theme.colors.dark[9] : theme.colors.gray[2]}
-      overlayOpacity={0.55}
-      overlayBlur={3}
-    >
-      {/* Modal content */}
-    </Modal></>
   );
 }
 
