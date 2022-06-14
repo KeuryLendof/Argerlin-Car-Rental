@@ -251,15 +251,6 @@
 
 /*Slider*/
 
-.mySwiperPrincipal{
-    height: 300px;
-}
-.mySwiperGrupo{
-    height: 80px;
-}
-.swiper-slide {
-    
-}
 .probando{
     display: flex;
     justify-content: center;
