@@ -3,11 +3,13 @@ import './style.css'
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Card, Image, Text, Group, Badge, createStyles, Center, Button, TextInput } from '@mantine/core';
+import "swiper/css/thumbs";
+import "swiper/css/free-mode";
+import { Card, Image, Text, Group, Badge, createStyles, Center, Button, Grid } from '@mantine/core';
 import { useModals } from '@mantine/modals';
 import { DateRangePicker } from '@mantine/dates';
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation } from "swiper";
+import { Pagination, FreeMode, Navigation, Thumbs  } from "swiper";
 
 
 
@@ -53,24 +55,77 @@ function Cards({vehiculos}) {
 
   const { classes } = useStyles();
   const modals = useModals();
+  const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
-  // const [value, setValue] = useState<[Date | null, Date | null]>([
-  //   new Date(2021, 11, 1),
-  //   new Date(2021, 11, 5),
-  // ]);
+  const [value, setValue] = useState()
+  //console.log(value)
 
-  const openContentModal = (name) => {
+  const openContentModal = (name, img) => {
     const id = modals.openModal({
       title: `${name}`,
+      size: "lg",
       children: (
-        
+        <>
+          <Swiper
+            style={{
+              "--swiper-navigation-color": "#fff",
+              "--swiper-pagination-color": "#fff",
+            }}
+            spaceBetween={10}
+            navigation={true}
+            thumbs={{ swiper: thumbsSwiper }}
+            modules={[FreeMode, Navigation, Thumbs]}
+            className="mySwiperPrincipal"
+          >
+            <SwiperSlide>
+              <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+            </SwiperSlide>
+          </Swiper>
+          <Swiper
+            onSwiper={setThumbsSwiper}
+            spaceBetween={10}
+            slidesPerView={5}
+            freeMode={true}
+            watchSlidesProgress={true}
+            modules={[FreeMode, Navigation, Thumbs]}
+            className="mySwiperGrupo"
+          >
+            <SwiperSlide>
+              <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+            </SwiperSlide>
+          </Swiper>
+
           <DateRangePicker
-            label="Cuantos dias quieres rentar?"
-            placeholder="Pick dates range"
-            // value={value}
-            // onChange={setValue}
+            // label="Cuantos dias quieres rentar?"
+            placeholder="Cuantos dias quieres rentar?"
+            value={value}
+            onChange={setValue}
           />
-        
+        </> 
       ),
     });
   };
@@ -108,7 +163,7 @@ function Cards({vehiculos}) {
         {vehiculos.map((v) => {
           if (v.categoria === 'Mas rentados') {
             return (
-              <SwiperSlide>
+              <SwiperSlide className='probando'>
                 <Card withBorder radius="md" className="cards">
                   <Card.Section className={classes.imageSection}>
                     <Image src={v.imagen} alt="Tesla Model S" />
@@ -152,7 +207,7 @@ function Cards({vehiculos}) {
                         </Text>
                       </div>
 
-                      <Button onClick={()=>openContentModal(v.nombre)} radius="xl" style={{ flex: 1 }}>
+                      <Button onClick={()=>openContentModal(v.nombre, v.imagen)} radius="xl" style={{ flex: 1 }}>
                         Rent now
                       </Button>
                     </Group>
@@ -195,7 +250,7 @@ function Cards({vehiculos}) {
         {vehiculos.map((v) => {
           if (v.categoria === 'Mas economico') {
             return (
-              <SwiperSlide>
+              <SwiperSlide className='probando'>
                 <Card withBorder radius="md" className="cards">
                   <Card.Section className={classes.imageSection}>
                     <Image src={v.imagen} alt="Tesla Model S" />
@@ -282,7 +337,7 @@ function Cards({vehiculos}) {
         {vehiculos.map((v) => {
           if (v.categoria === 'Alta Gama') {
             return (
-              <SwiperSlide>
+              <SwiperSlide className='probando'>
                 <Card withBorder radius="md" className="cards">
                   <Card.Section className={classes.imageSection}>
                     <Image src={v.imagen} alt="Tesla Model S" />
