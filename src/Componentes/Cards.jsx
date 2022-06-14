@@ -71,17 +71,12 @@ function Cards({vehiculos}) {
             }}
             navigation={true}
             breakpoints={{
-              640: {
+              700: {
                 slidesPerView: 1,
-                spaceBetween: 15,
-              },
-              768: {
-                slidesPerView: 2,
-                spaceBetween: 35,
               },
             }}
             modules={[Pagination, Navigation]}
-            className="mySwiper"
+            className="mySwiperMas"
           >
             <SwiperSlide className='probando'>
                 <Image
@@ -107,10 +102,11 @@ function Cards({vehiculos}) {
             <SwiperSlide className='probando'>
               <Image
                 radius="md"
-                src={img}
+                src={`https://th.bing.com/th/id/R.dbedc30b5030143f48101a2b5241b109?rik=rzu9E5Gfg1lITg&pid=ImgRaw&r=${0}`}
                 alt="Random unsplash image"
               />
             </SwiperSlide>
+            <br />
           </Swiper>
 
           <DateRangePicker

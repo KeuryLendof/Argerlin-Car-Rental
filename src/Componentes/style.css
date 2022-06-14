@@ -250,12 +250,21 @@
 /*fin*/
 
 /*Slider*/
-
+.mySwiperMas{
+    width: 380px;
+    margin: 0 auto;
+}
 .probando{
     display: flex;
     justify-content: center;
     align-items: center;  
     cursor: grab;
+}
+@media screen and (max-width: 460px){
+  
+    .mySwiperMas{  
+       width: 320px;  
+    } 
 }
   
 /*Fin slider*/
