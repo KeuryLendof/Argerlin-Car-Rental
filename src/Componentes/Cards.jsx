@@ -63,44 +63,55 @@ function Cards({vehiculos}) {
       size: "lg",
       children: (
         <>
-          <Grid grow gutter="lg">
-            <Grid.Col span={4}>
-              <div style={{ width: 140, marginLeft: 'auto', marginRight: 'auto' }}>
+          <Swiper
+            slidesPerView={1}
+            spaceBetween={10}
+            pagination={{
+              clickable: true,
+            }}
+            navigation={true}
+            breakpoints={{
+              640: {
+                slidesPerView: 1,
+                spaceBetween: 15,
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 35,
+              },
+            }}
+            modules={[Pagination, Navigation]}
+            className="mySwiper"
+          >
+            <SwiperSlide className='probando'>
                 <Image
                   radius="md"
                   src={img}
                   alt="Random unsplash image"
                 />
-              </div>
-            </Grid.Col>
-            <Grid.Col span={4}>
-              <div style={{ width: 140, marginLeft: 'auto', marginRight: 'auto' }}>
+            </SwiperSlide>
+            <SwiperSlide className='probando'>
                 <Image
                   radius="md"
                   src={img}
                   alt="Random unsplash image"
                 />
-              </div>
-            </Grid.Col>
-            <Grid.Col span={4}>
-              <div style={{ width: 140, marginLeft: 'auto', marginRight: 'auto' }}>
+            </SwiperSlide>
+            <SwiperSlide className='probando'>
                 <Image
                   radius="md"
                   src={img}
                   alt="Random unsplash image"
                 />
-              </div>
-            </Grid.Col>
-            <Grid.Col span={4}>
-              <div style={{ width: 140, marginLeft: 'auto', marginRight: 'auto' }}>
-                <Image
-                  radius="md"
-                  src={img}
-                  alt="Random unsplash image"
-                />
-              </div>
-            </Grid.Col>
-          </Grid>
+            </SwiperSlide>
+            <SwiperSlide className='probando'>
+              <Image
+                radius="md"
+                src={img}
+                alt="Random unsplash image"
+              />
+            </SwiperSlide>
+          </Swiper>
 
           <DateRangePicker
             // label="Cuantos dias quieres rentar?"
