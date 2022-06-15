@@ -253,11 +253,12 @@
 .mySwiperMas{
     width: 380px;
     margin: 0 auto;
+
 }
 
-.masImagenes image{
-    justify-content: center;
-    align-items: center;
+.masImagenes{
+    /* justify-content: center;
+    align-items: center; */
 }
 .probando{
     display: flex;

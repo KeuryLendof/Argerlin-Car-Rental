@@ -80,12 +80,14 @@ function Cards({vehiculos}) {
           >
             {img.map((f)=>{
               return(
-                <SwiperSlide className='masImagenes'>
-                  <Image
-                    radius="md"
-                    src={f.foto}
-                    alt="R"
-                  />
+                <SwiperSlide>
+                  <div className='masImagenes'>
+                    <Image
+                      radius="md"
+                      src={f.foto}
+                      alt={name}
+                    />
+                  </div>
                 </SwiperSlide>
               )
             })}
@@ -267,7 +269,7 @@ function Cards({vehiculos}) {
                         </Text>
                       </div>
 
-                      <Button radius="xl" style={{ flex: 1 }}>
+                      <Button onClick={()=>openContentModal(v.nombre, v.masFotos)} radius="xl" style={{ flex: 1 }}>
                         Rent now
                       </Button>
                     </Group>
@@ -354,7 +356,7 @@ function Cards({vehiculos}) {
                         </Text>
                       </div>
 
-                      <Button radius="xl" style={{ flex: 1 }}>
+                      <Button onClick={()=>openContentModal(v.nombre, v.masFotos)} radius="xl" style={{ flex: 1 }}>
                         Rent now
                       </Button>
                     </Group>
