@@ -82,7 +82,12 @@ const Vehiculos = [
             { label: 'Automatic gearbox', icon: ManualGearbox },
             { label: 'Electric', icon: GasStation }
         ],
-        masFotos:[],
+        masFotos:[
+            {foto: require('../assets/images/kia sportage 2022.png')},
+            {foto: 'https://th.bing.com/th/id/R.f59c1eb97c538859f9acf3e5e7cffc4d?rik=QDlwfiesIAlo0A&pid=ImgRaw&r=0'},
+            {foto: 'https://th.bing.com/th/id/OIP.65YXzOmz_tlr1o2R_2daBwHaEh?pid=ImgDet&rs=1'},
+            {foto: 'https://th.bing.com/th/id/R.fb87f659b7ea3f38f3d47f85940e49b9?rik=cOMRG%2bYrZdgypA&pid=ImgRaw&r=0'}
+        ],
         precio: '$68.00',
         categoria: 'Mas rentados'
     },
@@ -98,7 +103,12 @@ const Vehiculos = [
             { label: 'Automatic gearbox', icon: ManualGearbox },
             { label: 'Electric', icon: GasStation }
         ],
-        masFotos:[],
+        masFotos:[
+            {foto: require('../assets/images/kia sorento 2022.png')},
+            {foto: 'https://th.bing.com/th/id/R.b667a4f08cfb28b1f0e1eb9bedeb7b67?rik=pXpjJ3Wa%2fw5IQQ&pid=ImgRaw&r=0'},
+            {foto: 'https://th.bing.com/th/id/R.d77b78fa36e6451d131e45c727f11b82?rik=Pu6KWcOPRyYc0A&pid=ImgRaw&r=0'},
+            {foto: 'https://th.bing.com/th/id/OIP.xRBPducoL4jv0xLhyjmRMgHaE8?pid=ImgDet&rs=1'}
+        ],
         precio: '$50.00',
         categoria: 'Mas rentados'
     },
@@ -114,7 +124,10 @@ const Vehiculos = [
             { label: 'Automatic gearbox', icon: ManualGearbox },
             { label: 'Electric', icon: GasStation }
         ],
-        masFotos:[],
+        masFotos:[
+            {foto: require('../assets/images/kia sorento 2017.png')},
+            {foto: 'https://th.bing.com/th/id/R.448491540e331bd51bbb82ef69d3b294?rik=QFM8IQ%2fQEauztA&pid=ImgRaw&r=0'}
+        ],
         precio: '$40.00',
         categoria: 'Mas rentados'
     },
@@ -210,7 +223,12 @@ const Vehiculos = [
             { label: 'Automatic gearbox', icon: ManualGearbox },
             { label: 'Electric', icon: GasStation }
         ],
-        masFotos:[],
+        masFotos:[
+            {foto: require('../assets/images/2022 Hyundai Santa Fe.png')},
+            {foto: 'https://th.bing.com/th/id/R.c8444a5dd7f14473fa115472af56bfd8?rik=1BzsWIkgRWewJg&pid=ImgRaw&r=0'},
+            {foto: 'https://th.bing.com/th/id/R.71a42e35df5572ca7213d6910dabf2f1?rik=jUjqCA4tH17juA&pid=ImgRaw&r=0'},
+            {foto: 'https://th.bing.com/th/id/R.e8ba155922e9df3eef0147de0dfcd8be?rik=C4ZFhunVYzyqmw&pid=ImgRaw&r=0'}
+        ],
         precio: '$50.00',
         categoria: 'Mas rentados'
     },
@@ -226,7 +244,11 @@ const Vehiculos = [
             { label: 'Automatic gearbox', icon: ManualGearbox },
             { label: 'Electric', icon: GasStation }
         ],
-        masFotos:[],
+        masFotos:[
+            {foto: require('../assets/images/2021 Honda Civic.png')},
+            {foto: 'https://th.bing.com/th/id/R.58d618fa53511b0484f75bcc3a770d87?rik=Id2ZsnhxFeFWMA&pid=ImgRaw&r=0'},
+            {foto: 'https://th.bing.com/th/id/R.62ee7dfaf5f4eb019209fc4401c12006?rik=S2NLwz4Igm0gxA&pid=ImgRaw&r=0'}
+        ],
         precio: '$45.00',
         categoria: 'Mas rentados'
     },

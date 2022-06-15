@@ -255,6 +255,10 @@
     margin: 0 auto;
 }
 
+.masImagenes image{
+    justify-content: center;
+    align-items: center;
+}
 .probando{
     display: flex;
     justify-content: center;

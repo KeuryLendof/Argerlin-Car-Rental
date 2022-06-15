@@ -80,7 +80,7 @@ function Cards({vehiculos}) {
           >
             {img.map((f)=>{
               return(
-                <SwiperSlide className='probando'>
+                <SwiperSlide className='masImagenes'>
                   <Image
                     radius="md"
                     src={f.foto}
