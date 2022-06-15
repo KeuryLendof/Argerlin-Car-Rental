@@ -13,6 +13,7 @@ const Vehiculos = [
             { label: 'Automatic gearbox', icon: ManualGearbox },
             { label: 'Electric', icon: GasStation }
         ],
+        masFotos:[],
         precio: '$168.00',
         categoria: 'Alta Gama'
     },
@@ -28,6 +29,7 @@ const Vehiculos = [
             { label: 'Automatic gearbox', icon: ManualGearbox },
             { label: 'Electric', icon: GasStation }
         ],
+        masFotos:[],
         precio: '$168.00',
         categoria: 'Alta Gama'
     },
@@ -43,6 +45,7 @@ const Vehiculos = [
             { label: 'Automatic gearbox', icon: ManualGearbox },
             { label: 'Electric', icon: GasStation }
         ],
+        masFotos:[],
         precio: '$168.00',
         categoria: 'Alta Gama'
     },
@@ -79,6 +82,7 @@ const Vehiculos = [
             { label: 'Automatic gearbox', icon: ManualGearbox },
             { label: 'Electric', icon: GasStation }
         ],
+        masFotos:[],
         precio: '$68.00',
         categoria: 'Mas rentados'
     },
@@ -94,6 +98,7 @@ const Vehiculos = [
             { label: 'Automatic gearbox', icon: ManualGearbox },
             { label: 'Electric', icon: GasStation }
         ],
+        masFotos:[],
         precio: '$50.00',
         categoria: 'Mas rentados'
     },
@@ -109,6 +114,7 @@ const Vehiculos = [
             { label: 'Automatic gearbox', icon: ManualGearbox },
             { label: 'Electric', icon: GasStation }
         ],
+        masFotos:[],
         precio: '$40.00',
         categoria: 'Mas rentados'
     },
@@ -124,6 +130,7 @@ const Vehiculos = [
             { label: 'Automatic gearbox', icon: ManualGearbox },
             { label: 'Electric', icon: GasStation }
         ],
+        masFotos:[],
         precio: '$35.00',
         categoria: 'Mas economico'
     },
@@ -139,6 +146,7 @@ const Vehiculos = [
             { label: 'Automatic gearbox', icon: ManualGearbox },
             { label: 'Electric', icon: GasStation }
         ],
+        masFotos:[],
         precio: '$110.00',
         categoria: 'Alta Gama'
     },
@@ -154,6 +162,7 @@ const Vehiculos = [
             { label: 'Automatic gearbox', icon: ManualGearbox },
             { label: 'Electric', icon: GasStation }
         ],
+        masFotos:[],
         precio: '$30.00',
         categoria: 'Mas economico'
     },
@@ -169,6 +178,7 @@ const Vehiculos = [
             { label: 'Automatic gearbox', icon: ManualGearbox },
             { label: 'Electric', icon: GasStation }
         ],
+        masFotos:[],
         precio: '$50.00',
         categoria: 'Alta Gama'
     },
@@ -184,6 +194,7 @@ const Vehiculos = [
             { label: 'Automatic gearbox', icon: ManualGearbox },
             { label: 'Electric', icon: GasStation }
         ],
+        masFotos:[],
         precio: '$170.00',
         categoria: 'Alta Gama'
     },
@@ -199,6 +210,7 @@ const Vehiculos = [
             { label: 'Automatic gearbox', icon: ManualGearbox },
             { label: 'Electric', icon: GasStation }
         ],
+        masFotos:[],
         precio: '$50.00',
         categoria: 'Mas rentados'
     },
@@ -214,6 +226,7 @@ const Vehiculos = [
             { label: 'Automatic gearbox', icon: ManualGearbox },
             { label: 'Electric', icon: GasStation }
         ],
+        masFotos:[],
         precio: '$45.00',
         categoria: 'Mas rentados'
     },
@@ -229,6 +242,7 @@ const Vehiculos = [
             { label: 'Automatic gearbox', icon: ManualGearbox },
             { label: 'Electric', icon: GasStation }
         ],
+        masFotos:[],
         precio: '$40.00',
         categoria: 'Mas economico'
     },
@@ -244,6 +258,7 @@ const Vehiculos = [
             { label: 'Automatic gearbox', icon: ManualGearbox },
             { label: 'Electric', icon: GasStation }
         ],
+        masFotos:[],
         precio: '$40.00',
         categoria: 'Mas economico'
     }

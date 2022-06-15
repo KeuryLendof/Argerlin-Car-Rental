@@ -78,34 +78,17 @@ function Cards({vehiculos}) {
             modules={[Pagination, Navigation]}
             className="mySwiperMas"
           >
-            <SwiperSlide className='probando'>
-                <Image
-                  radius="md"
-                  src={img}
-                  alt="Random unsplash image"
-                />
-            </SwiperSlide>
-            <SwiperSlide className='probando'>
-                <Image
-                  radius="md"
-                  src={`https://th.bing.com/th/id/R.dbedc30b5030143f48101a2b5241b109?rik=rzu9E5Gfg1lITg&pid=ImgRaw&r=${0}`}
-                  alt="Random unsplash image"
-                />
-            </SwiperSlide>
-            <SwiperSlide className='probando'>
-              <Image
-                radius="md"
-                src='https://th.bing.com/th/id/R.68365632e9a6504914620d28cd1b257a?rik=jA3FFZrwApiJCA&pid=ImgRaw&r=0'
-                alt="Random unsplash image"
-              />
-            </SwiperSlide>
-            <SwiperSlide className='probando'>
-              <Image
-                radius="md"
-                src='https://th.bing.com/th/id/OIP.8gb8tG43stPC-9lB5Uk36QHaE8?pid=ImgDet&rs=1'
-                alt="Random unsplash image"
-              />
-            </SwiperSlide>
+            {img.map((f)=>{
+              return(
+                <SwiperSlide className='probando'>
+                  <Image
+                    radius="md"
+                    src={f.foto}
+                    alt="R"
+                  />
+                </SwiperSlide>
+              )
+            })}
             <br />
           </Swiper>
 
@@ -197,7 +180,7 @@ function Cards({vehiculos}) {
                         </Text>
                       </div>
 
-                      <Button onClick={()=>openContentModal(v.nombre, v.imagen)} radius="xl" style={{ flex: 1 }}>
+                      <Button onClick={()=>openContentModal(v.nombre, v.masFotos)} radius="xl" style={{ flex: 1 }}>
                         Rent now
                       </Button>
                     </Group>
