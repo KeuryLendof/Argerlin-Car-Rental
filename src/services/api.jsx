@@ -58,6 +58,12 @@ const Vehiculos = [
             { label: 'Automatic gearbox', icon: ManualGearbox },
             { label: 'Electric', icon: GasStation }
         ],
+        masFotos:[
+            {foto: require('../assets/images/honda-cr-v.png')},
+            {foto: 'https://th.bing.com/th/id/R.dbedc30b5030143f48101a2b5241b109?rik=rzu9E5Gfg1lITg&pid=ImgRaw&r=0'},
+            {foto: 'https://th.bing.com/th/id/R.68365632e9a6504914620d28cd1b257a?rik=jA3FFZrwApiJCA&pid=ImgRaw&r=0'},
+            {foto: 'https://th.bing.com/th/id/OIP.8gb8tG43stPC-9lB5Uk36QHaE8?pid=ImgDet&rs=1'}
+        ],
         precio: '$168.00',
         categoria: 'Mas rentados'
     },
