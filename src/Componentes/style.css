@@ -256,10 +256,16 @@
 
 }
 
-.masImagenes{
-    /* justify-content: center;
-    align-items: center; */
+/* .masImagenes{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }
+.masImagenes img{
+    min-width: 333px;
+    min-height: 285px;
+    border-radius: 33px;
+} */
 .probando{
     display: flex;
     justify-content: center;

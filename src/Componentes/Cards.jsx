@@ -4,6 +4,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Card, Image, Text, Group, Badge, createStyles, Center, Button, Grid } from '@mantine/core';
+import { ShoppingCartPlus } from 'tabler-icons-react';
 import { useModals } from '@mantine/modals';
 import { DateRangePicker } from '@mantine/dates';
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -81,25 +82,39 @@ function Cards({vehiculos}) {
             {img.map((f)=>{
               return(
                 <SwiperSlide>
-                  <div className='masImagenes'>
-                    <Image
-                      radius="md"
-                      src={f.foto}
-                      alt={name}
-                    />
-                  </div>
+                  <Image
+                    style={{justifyContent:'center', alignItems:'center'}}
+                    radius="md"
+                    src={f.foto}
+                    alt={name}
+                  />
                 </SwiperSlide>
               )
             })}
             <br />
           </Swiper>
-
-          <DateRangePicker
-            // label="Cuantos dias quieres rentar?"
-            placeholder="Cuantos dias quieres rentar?"
-            value={value}
-            onChange={setValue}
-          />
+          <Grid justify="center" align="center">
+            <Grid.Col md={8}>
+              <DateRangePicker
+                // label="Cuantos dias quieres rentar?"
+                placeholder="Cuantos dias quieres rentar?"
+                value={value}
+                onChange={setValue}
+              />
+            </Grid.Col>
+            <Grid.Col md={3}>
+              <Button 
+                component="a" 
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://twitter.com/mantinedev"
+                variant="outline"
+                leftIcon={<ShoppingCartPlus size={18} />}
+              >
+                Rent now
+              </Button>
+            </Grid.Col>
+          </Grid>
         </> 
       ),
     });
