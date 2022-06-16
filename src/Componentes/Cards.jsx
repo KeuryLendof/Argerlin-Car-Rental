@@ -3,7 +3,9 @@ import './style.css'
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Card, Image, Text, Group, Badge, createStyles, Center, Button, Grid } from '@mantine/core';
+import swal from 'sweetalert';
+import { Card, Image, Text, Group, Badge, createStyles, Center, Button, Grid, TextInput, Checkbox, Box,  NumberInput } from '@mantine/core';
+import { useForm } from '@mantine/form';
 import { ShoppingCartPlus } from 'tabler-icons-react';
 import { useModals } from '@mantine/modals';
 import { DateRangePicker } from '@mantine/dates';
@@ -55,11 +57,20 @@ function Cards({vehiculos}) {
   const { classes } = useStyles();
   const modals = useModals();
 
-  const [value, setValue] = useState()
+
+  const [value, setValue] = useState([Date | null, Date | null])
   //console.log(value)
+  const rentNow=()=>{
+    // if(value.){
+    //   //swal("Oops", "Tienes que colocar cuantos dias quieres rentar!", "error")
+    // }else{
+      
+    // }
+    console.log(value)
+  }
 
   const openContentModal = (name, img) => {
-    const id = modals.openModal({
+    modals.openModal({
       title: `${name}`,
       size: "lg",
       children: (
@@ -98,16 +109,16 @@ function Cards({vehiculos}) {
               <DateRangePicker
                 // label="Cuantos dias quieres rentar?"
                 placeholder="Cuantos dias quieres rentar?"
-                value={value}
                 onChange={setValue}
               />
             </Grid.Col>
             <Grid.Col md={3}>
               <Button 
                 component="a" 
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://twitter.com/mantinedev"
+                // target="_blank"
+                // rel="noopener noreferrer"
+                // href="https://twitter.com/mantinedev"
+                onClick={()=>rentNow()}
                 variant="outline"
                 leftIcon={<ShoppingCartPlus size={18} />}
               >
