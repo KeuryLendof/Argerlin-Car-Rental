@@ -58,15 +58,16 @@ function Cards({vehiculos}) {
   const modals = useModals();
 
 
-  const [value, setValue] = useState([Date | null, Date | null])
+  const [value, setValue] = useState([])
+  //const [dia, setDia] = useState()
   //console.log(value)
-  const rentNow=()=>{
-    // if(value.){
-    //   //swal("Oops", "Tienes que colocar cuantos dias quieres rentar!", "error")
+  const rentNow=({valor})=>{
+    // if(value.length===0){
+    //   swal("Oops", "Tienes que colocar cuantos dias quieres rentar!", "error")
     // }else{
-      
+    //   console.log(value)
     // }
-    console.log(value)
+    console.log(valor)
   }
 
   const openContentModal = (name, img) => {
@@ -118,7 +119,7 @@ function Cards({vehiculos}) {
                 // target="_blank"
                 // rel="noopener noreferrer"
                 // href="https://twitter.com/mantinedev"
-                onClick={()=>rentNow()}
+                onClick={()=>rentNow({valor:value})}
                 variant="outline"
                 leftIcon={<ShoppingCartPlus size={18} />}
               >
