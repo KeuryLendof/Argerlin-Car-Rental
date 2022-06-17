@@ -7,9 +7,8 @@ import './style.css'
 const useStyles = createStyles((theme) => ({
   footer: {
     marginTop: 120,
-    borderTop: `1px solid ${
-      theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[2]
-    }`,
+    borderTop: '2px solid rgb(0, 0, 0)',
+    borderRadius: '5% 5% 0 0',
     backgroundColor:'#ff1616de',
   },
 
