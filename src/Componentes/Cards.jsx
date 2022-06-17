@@ -61,13 +61,13 @@ function Cards({vehiculos}) {
   const [value, setValue] = useState([])
   //const [dia, setDia] = useState()
   //console.log(value)
-  const rentNow=({valor})=>{
+  const rentNow=({valor, nombre, imagen})=>{
     // if(value.length===0){
     //   swal("Oops", "Tienes que colocar cuantos dias quieres rentar!", "error")
     // }else{
     //   console.log(value)
     // }
-    console.log(valor)
+    console.log(`Estas rentando un/a: ${nombre} `, imagen, valor)
   }
 
   const openContentModal = (name, img) => {
@@ -119,7 +119,7 @@ function Cards({vehiculos}) {
                 // target="_blank"
                 // rel="noopener noreferrer"
                 // href="https://twitter.com/mantinedev"
-                onClick={()=>rentNow({valor:value})}
+                onClick={()=>rentNow({valor:value, nombre:name, imagen:img[0]})}
                 variant="outline"
                 leftIcon={<ShoppingCartPlus size={18} />}
               >
