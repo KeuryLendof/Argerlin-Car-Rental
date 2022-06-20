@@ -36,7 +36,7 @@ function App() {
     <div className="Appp" onLoad={setTimeout(Alerta,9000)}>
       <MantineProvider>
         <ModalsProvider>
-          <Header/>
+          <Header vehiculos={data}/>
           <br/>
           <br/>
           <br/>

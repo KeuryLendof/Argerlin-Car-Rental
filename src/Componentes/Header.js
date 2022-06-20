@@ -1,12 +1,16 @@
-import React from 'react';
-import { TextInput, TextInputProps, ActionIcon, useMantineTheme } from '@mantine/core';
+import { useState } from 'react';
+import { TextInput, Autocomplete, ActionIcon, useMantineTheme } from '@mantine/core';
 import { Search, ArrowRight, ArrowLeft } from 'tabler-icons-react';
 import './style.css'
 
-function Header(){
+function Header({vehiculos}){
 
     const theme = useMantineTheme();
-
+    //const [value, setValue] = useState();
+    // const data = vehiculos.filter((dato)=>
+    //     dato.nombre.toLowerCase().includes(value.toLowerCase())
+    // )
+    const data = vehiculos.map((item) => ({ ...item, value: item.nombre }));
 
     return(
         <header className="header">  
@@ -21,7 +25,7 @@ function Header(){
                         Buscar
                     </a>
                     <ul class="dropdown-menu">
-                        <TextInput
+                        <Autocomplete
                             icon={<Search size={18} />}
                             radius="xl"
                             size="md"
@@ -33,6 +37,10 @@ function Header(){
                             class="dropdown-item"
                             placeholder="Search questions"
                             rightSectionWidth={42}
+                            data={data}
+                            filter={(value, item) =>
+                                item.value.toLowerCase().includes(value.toLowerCase())
+                            }
                         />
                     </ul>
                 </li>
