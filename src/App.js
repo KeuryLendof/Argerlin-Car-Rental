@@ -42,8 +42,8 @@ function App() {
           <br/>
           <br/>
           <Banner/>
-          <About/>
           <Cards vehiculos={data}/>
+          <About/>
           <Contact/>
           <Footer/>
         </ModalsProvider>
