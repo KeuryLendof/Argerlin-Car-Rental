@@ -309,6 +309,8 @@
     margin-top: 1.4em;
     margin-bottom: 1em;
     font-family: 'Alfa Slab One', cursive;
+    font-size: 1.2rem; 
+    font-weight: 50; 
 }
 @media (min-width:740px){
     .about{

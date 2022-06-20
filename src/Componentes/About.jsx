@@ -11,18 +11,6 @@ function About(){
 
             <article className="about__item">
                 <figure className="about__picture">
-                    <img src="" className="about__img"/>
-                </figure>
-        
-                <h3 className="about__title"> Access your files, anywhere</h3>
-        
-                <p className="about__paragraph"> The ability to use a smartphone, tablet, or computer to access your account means your 
-                    files follow you everywhere.
-                </p>
-            </article>
-    
-            <article className="about__item">
-                <figure className="about__picture">
                     <img src={Security} className="about__img"/>
                 </figure>
         
@@ -49,13 +37,25 @@ function About(){
     
             <article className="about__item">
                 <figure className="about__picture">
-                    <img src="" className="about__img"/>
+                    <img src={require('../assets/images/republica-dominicana.png')} className="about__img"/>
                 </figure>
         
-                <h3 className="about__title">  Store any type of file</h3>
+                <h3 className="about__title"> Throughout the territory</h3>
         
                 <p className="about__paragraph">  Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all 
-                    file types to be securely stored and shared.
+                    file types to be.
+                </p>
+            </article>
+
+            <article className="about__item">
+                <figure className="about__picture">
+                    <img src={require('../assets/images/libro (2).png')} className="about__img"/>
+                </figure>
+        
+                <h3 className="about__title"> Seniority in business</h3>
+        
+                <p className="about__paragraph"> The ability to use a smartphone, tablet, or computer to access your account means your 
+                    files follow you everywhere.
                 </p>
             </article>
     
