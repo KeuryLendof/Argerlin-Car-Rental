@@ -10,7 +10,7 @@ function Header({vehiculos}){
     // const data = vehiculos.filter((dato)=>
     //     dato.nombre.toLowerCase().includes(value.toLowerCase())
     // )
-    const data = vehiculos.map((item) => ({ ...item, value: item.nombre }));
+    const data = vehiculos.map((cars) => ({ ...cars, value: cars.nombre }));
 
     return(
         <header className="header">  
@@ -38,8 +38,8 @@ function Header({vehiculos}){
                             placeholder="Search questions"
                             rightSectionWidth={42}
                             data={data}
-                            filter={(value, item) =>
-                                item.value.toLowerCase().includes(value.toLowerCase())
+                            filter={(value, cars) =>
+                                cars.value.toLowerCase().includes(value.toLowerCase())
                             }
                         />
                     </ul>
