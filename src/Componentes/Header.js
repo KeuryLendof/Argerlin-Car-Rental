@@ -14,6 +14,8 @@ function Header(){
             <input className="menu-btn" type="checkbox" id="menu-btn" />  
             <label className="menu-icon" for="menu-btn"><span className="navicon"></span></label>  
             <ul className="menu">
+                <li className='itemLi'><a href="#careers">Ubicacion</a></li> 
+                <li className='itemLi'><a href="#careers">About</a></li>
                 <li class="ndropdown itemLi">
                     <a class="dropdown-toggle" href="#" id="DropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Buscar
@@ -34,7 +36,6 @@ function Header(){
                         />
                     </ul>
                 </li>
-                <li className='itemLi'><a href="#careers">Ubicacion</a></li>  
             </ul>  
         </header>        
     )

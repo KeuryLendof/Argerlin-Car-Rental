@@ -281,6 +281,48 @@
   
 /*Fin slider*/
 
+/*About*/
+.Acontainer{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 0;
+    overflow: hidden;
+}
+.about{
+    color: #000;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+}
+
+.about__img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+.about__title{
+    margin-top: 1.4em;
+    margin-bottom: 1em;
+    font-family: 'Alfa Slab One', cursive;
+}
+@media (min-width:740px){
+    .about{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .about__item{
+        width: 40%;
+    }
+}
+/*Fin about*/
+
 /*Contacto*/
 .containerContacto{
     width: 90%;

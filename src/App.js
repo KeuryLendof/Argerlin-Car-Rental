@@ -4,6 +4,7 @@ import Cards from './Componentes/Cards';
 import Header from './Componentes/Header';
 import Banner from './Componentes/Banner';
 import Contact from './Componentes/Contact';
+import About from './Componentes/About';
 import Footer from './Componentes/Footer';
 import { useEffect, useState } from "react";
 import Vehiculos from './services/api';
@@ -41,6 +42,7 @@ function App() {
           <br/>
           <br/>
           <Banner/>
+          <About/>
           <Cards vehiculos={data}/>
           <Contact/>
           <Footer/>
