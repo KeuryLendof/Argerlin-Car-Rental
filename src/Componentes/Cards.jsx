@@ -94,7 +94,7 @@ function Cards({vehiculos}) {
               return(
                 <SwiperSlide>
                   <Image
-                    style={{justifyContent:'center', alignItems:'center'}}
+                    style={{justifyContent:'center', alignItems:'center', height: '200px'}}
                     radius="md"
                     src={f.foto}
                     alt={name}
