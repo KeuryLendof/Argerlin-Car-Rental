@@ -15,10 +15,24 @@ import { ModalsProvider } from '@mantine/modals';
 function App() {
 
   const [data, setData] = useState();
+  const [formula1, setFormula1] = useState(null);
   // const [buscar, setBuscar] = useState();
 
   useEffect(() => {
     setData(Vehiculos)
+    // fetch("https://v1.formula-1.api-sports.io/teams",{
+    //   method: "GET",
+    //   headers:{
+    //     'x-rapidapi-key': 'fe796eb39ef3b827ab821da845d996ec',
+    //     'x-rapidapi-host': 'v1.formula-1.api-sports.io'
+    //   },
+    // })
+    //   .then((response)=> response.json())
+    //   .then((data)=>{
+    //     console.log(data.response);
+    //     setFormula1(data.response);
+    //   })
+    //   .catch((error)=> console.log('falloooooo', error));
   },[])
 
   const Alerta=()=>{
